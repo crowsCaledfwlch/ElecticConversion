@@ -5,12 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ElecticConversion"
         mc:Ignorable="d"
-        Title="Electric Conversion" Height="516.388" Width="800">
-    <Grid>
-        <TextBox x:Name="txbxOhms" HorizontalAlignment="Left" Height="44" Margin="106,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3"/>
-        <TextBox x:Name="txbxAmps" HorizontalAlignment="Left" Height="44" Margin="266,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3"/>
-        <TextBox x:Name="txbxVolts" HorizontalAlignment="Left" Height="44" Margin="426,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3"/>
-        <TextBox x:Name="txbxWatts" HorizontalAlignment="Left" Height="44" Margin="586,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3"/>
+        Title="Electric Conversion" Height="516.388" Width="800" Loaded="frm_Loaded">
+    <Grid Background="#FFD4FAF8">
+        <TextBox x:Name="txbxOhms" HorizontalAlignment="Left" Height="44" Margin="106,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3" IsReadOnly="True" Text="0" Background="White" BorderBrush="#FF40528A"/>
+        <TextBox x:Name="txbxAmps" HorizontalAlignment="Left" Height="44" Margin="266,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3" IsReadOnly="True" Text="0" BorderBrush="#FF40528A"/>
+        <TextBox x:Name="txbxVolts" HorizontalAlignment="Left" Height="44" Margin="426,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3" IsReadOnly="True" Text="0" BorderBrush="#FF40528A"/>
+        <TextBox x:Name="txbxWatts" HorizontalAlignment="Left" Height="44" Margin="586,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3" IsReadOnly="True" Text="0" BorderBrush="#FF40528A"/>
+        <Label x:Name="lblOhms" Content="Ohms" HorizontalAlignment="Left" Margin="106,155,0,0" VerticalAlignment="Top" Width="87" Height="40" FontSize="20"/>
+        <Label x:Name="lblAmps" Content="Amps" HorizontalAlignment="Left" Margin="266,155,0,0" VerticalAlignment="Top" Width="87" Height="40" FontSize="20"/>
+        <Label x:Name="lblVolts" Content="Volts" HorizontalAlignment="Left" Margin="426,155,0,0" VerticalAlignment="Top" Width="87" Height="40" FontSize="20"/>
+        <Label x:Name="lblWatts" Content="Watts" HorizontalAlignment="Left" Margin="586,155,0,0" VerticalAlignment="Top" Width="87" Height="40" FontSize="20"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="331,52,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="O+A" HorizontalAlignment="Left" Width="118.4"/>
+            <ComboBoxItem Content="O+V" HorizontalAlignment="Left" Width="118.4"/>
+            <ComboBoxItem Content="O+W" HorizontalAlignment="Left" Width="118.4"/>
+            <ComboBoxItem Content="A+V" HorizontalAlignment="Left" Width="118.4"/>
+            <ComboBoxItem Content="A+W" HorizontalAlignment="Left" Width="118.4"/>
+            <ComboBoxItem Content="V+W" HorizontalAlignment="Left" Width="118.4"/>
+        </ComboBox>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="710,401,0,0" VerticalAlignment="Top" Width="75" Height="79" FontSize="20" Background="#FF1B2B5C" Foreground="LightGray"/>
 
     </Grid>
 </Window>
