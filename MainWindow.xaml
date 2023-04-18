@@ -1,0 +1,16 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElecticConversion"
+        mc:Ignorable="d"
+        Title="Electric Conversion" Height="516.388" Width="800">
+    <Grid>
+        <TextBox x:Name="txbxOhms" HorizontalAlignment="Left" Height="44" Margin="106,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3"/>
+        <TextBox x:Name="txbxAmps" HorizontalAlignment="Left" Height="44" Margin="266,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3"/>
+        <TextBox x:Name="txbxVolts" HorizontalAlignment="Left" Height="44" Margin="426,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3"/>
+        <TextBox x:Name="txbxWatts" HorizontalAlignment="Left" Height="44" Margin="586,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" BorderThickness="3"/>
+
+    </Grid>
+</Window>
