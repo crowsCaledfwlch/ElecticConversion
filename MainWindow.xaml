@@ -24,6 +24,8 @@
             <ComboBoxItem Content="V+W" HorizontalAlignment="Left" Width="118.4"/>
         </ComboBox>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="710,401,0,0" VerticalAlignment="Top" Width="75" Height="79" FontSize="20" Background="#FF1B2B5C" Foreground="LightGray"/>
+        <Label x:Name="lblTitle" Content="Electric Conversions O/A/V/W" HorizontalAlignment="Center" Margin="232,108,237.2,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="106,283,122.2,0" TextWrapping="Wrap" Text="    Pick a combination of two inputs and enter the values into those two boxes. The values for the other two boxes will be automatically calculated. Please stick to numbers as it will stop calculating when you stop using numbers." VerticalAlignment="Top" Height="139" Width="567" FontSize="20"/>
 
     </Grid>
 </Window>
