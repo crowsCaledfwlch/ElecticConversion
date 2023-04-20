@@ -131,4 +131,16 @@
         txbxVolts.Background = SystemColors.ActiveBorderBrush
         txbxWatts.Background = SystemColors.ActiveBorderBrush
     End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As RoutedEventArgs) Handles btnClear.Click
+        txbxOhms.Text = "0"
+        txbxAmps.Text = "0"
+        txbxVolts.Text = "0"
+        txbxWatts.Text = "0"
+        comboBox.SelectedIndex = -1
+        txbxOhms.Background = SystemColors.ActiveBorderBrush
+        txbxAmps.Background = SystemColors.ActiveBorderBrush
+        txbxVolts.Background = SystemColors.ActiveBorderBrush
+        txbxWatts.Background = SystemColors.ActiveBorderBrush
+    End Sub
 End Class
